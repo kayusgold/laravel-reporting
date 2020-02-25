@@ -1,6 +1,6 @@
 <?php
 
-namespace Jimmyjs\ReportGenerator\Facades;
+namespace Plustech\ReportGenerator\Facades;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
