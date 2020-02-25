@@ -6,6 +6,7 @@ use Plustech\ReportGenerator\ReportMedia\CSVReport;
 use Plustech\ReportGenerator\ReportMedia\PdfReport;
 use Plustech\ReportGenerator\ReportMedia\ExcelReport;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Illuminate\Support\Str;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
@@ -79,6 +80,7 @@ class ServiceProvider extends IlluminateServiceProvider
 
     protected function isLumen()
     {
-        return str_contains($this->app->version(), 'Lumen');
+        return Str::contains($this->app->version(), 'Lumen');
+        //return str_contains($this->app->version(), 'Lumen');
     }
 }
