@@ -1,11 +1,11 @@
 <?php
 
-namespace Jimmyjs\ReportGenerator\Facades;
+namespace Plustech\ReportGenerator\Facades;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
 /**
- * @see \Jimmyjs\ReportGenerator\ReportMedia\ExcelReport
+ * @see \Plustech\ReportGenerator\ReportMedia\ExcelReport
  */
 class ExcelReportFacade extends IlluminateFacade
 {
