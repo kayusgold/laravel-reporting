@@ -1,0 +1,33 @@
+{
+    "name": "plustech/laravel-reporting",
+    "description": "Laravel Reporting Generator from Jimmy-JS on github",
+    "authors": [
+        {
+            "name": "Kayode Omolaoye",
+            "email": "info@plustech.com.ng"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "*",
+        "maatwebsite/excel": "~3.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plustech\\ReportGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plustech\\ReportGenerator\\ServiceProvider"
+            ],
+            "aliases": {
+                "PdfReport": "Plustech\\ReportGenerator\\Facades\\PdfReportFacade",
+                "ExcelReport": "Plustech\\ReportGenerator\\Facades\\ExcelReportFacade",
+                "CSVReport": "Plustech\\ReportGenerator\\Facades\\CSVReportFacade::class"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
