@@ -10,17 +10,17 @@ I only adjusted the requirement to meet PHP 7 and Laravel 6.
 ## Installation
 Add package to your composer:
 
-    composer require jimmyjs/laravel-report-generator
+    composer require plustech/laravel-reporting
 
 If you are running Laravel > 5.5 that's all you need to do. If you are using Laravel < 5.5 add the ServiceProvider to the providers array in config/app.php
 
-    Jimmyjs\ReportGenerator\ServiceProvider::class,
+    Plustech\ReportGenerator\ServiceProvider::class,
 
 **Optionally**, you can add this to your aliases array in config/app.php
 
-    'PdfReport' => Jimmyjs\ReportGenerator\Facades\PdfReportFacade::class,
-    'ExcelReport' => Jimmyjs\ReportGenerator\Facades\ExcelReportFacade::class,
-    'CSVReport' => Jimmyjs\ReportGenerator\Facades\CSVReportFacade::class,
+    'PdfReport' => Plustech\ReportGenerator\Facades\PdfReportFacade::class,
+    'ExcelReport' => Plustech\ReportGenerator\Facades\ExcelReportFacade::class,
+    'CSVReport' => Plustech\ReportGenerator\Facades\CSVReportFacade::class,
 
 For more better speed on generating pdf report, I recommend you to use laravel snappy package. To using laravel snappy, you should install `wkhtmltopdf` to work with this package [(Jump to wkhtmltopdf installation)](#wkhtmltopdf-installation)
 
